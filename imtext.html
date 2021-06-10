@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 5px;
+            width: 50%;
+            height: 50%;
+            border: 2px solid black;
+
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+
+
+
+        }
+        .box img{
+            /* position: relative; */
+            width: 100%;
+            height: auto;
+
+
+        }
+        .text1{
+            background-color:rgba(0, 0,0, 0.45);
+        
+            color: white;
+            position: absolute;
+            height: 100%;        
+                width: 100%;
+            top: 0;
+            left: -100%;
+            padding: 0;
+            transition: all 1s;
+
+
+        }
+        .box:hover .text1{
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="1.jpg" alt="">
+        <div class="text1">
+            <h1 style="padding: 0;">flower rose</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At suscipit porro vero nesciunt cumque culpa illum natus velit error numquam.</p>        </div>
+    </div>
+    
+</body>
+</html>
